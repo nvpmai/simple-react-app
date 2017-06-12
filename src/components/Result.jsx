@@ -15,7 +15,7 @@ class Result extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.location.query !== nextProps.location.query) {
+    if (this.props.location.search !== nextProps.location.search) {
       this.initProps(nextProps)
     }
   }
