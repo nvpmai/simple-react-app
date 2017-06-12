@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 
 class Header extends Component {
-  constructor() {
-    super()
-    this.state = {
-      searchTerm: ''
-    }
+  handleSearch(event) {
+    let url = `/search?searchTerm=${event.target.value}`
+    this.props.history.push(url)
   }
 
   render() {
@@ -15,7 +13,11 @@ class Header extends Component {
         <div className="right menu">
           <div className="item">
             <div className="ui icon input">
-              <input type="text" placeholder="Search..."/>
+              <input
+                type="text"
+                placeholder="Search developers"
+                onChange={this.handleSearch.bind(this)}
+                />
               <i className="search link icon"></i>
             </div>
           </div>

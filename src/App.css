@@ -18,6 +18,22 @@
   font-size: large;
 }
 
+.ui.stackable.four.cards {
+  margin: auto;
+}
+
+.ui.menu {
+  font-size: initial !important;
+}
+
+.ui.icon.input > input {
+  width: 300px;
+}
+
+.ui.cards>.card>.content {
+  font-size: initial !important;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
